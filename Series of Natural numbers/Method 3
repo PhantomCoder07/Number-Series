@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int i=1, num;
+    printf ("Enter n term: ");
+    scanf ("%d",&num);
+    printf ("First %d natural number: ",num);
+    do
+    {
+        printf ("%d ",i);
+        i++;
+    }
+    while (i<=num);
+    return 0;
+}
