@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int i, num;
+    printf ("Enter n term: ");
+    scanf ("%d",&num);
+    printf ("First %d natural number: ",num);
+    for (i=1; i<=num; i++)
+    {
+        printf ("%d ",i);
+    }
+    return 0;
+}
