@@ -1,0 +1,74 @@
+// for loop
+#include <stdio.h>
+int main()
+{
+    float i,num,sum=0.0;
+    printf ("Enter the n terms: ");
+    scanf ("%f",&num);
+    printf ("Harmonic Series: ");
+    for (i=1; i<=num; i++)
+    {
+        if (i<num)
+        {
+            printf ("1/%.0f + ",i);
+            sum+=(1/i);
+        }
+        else
+        {
+            printf ("1/%.0f ",i);
+            sum+=(1/i);
+        }
+    }
+    printf ("\nSum of %.0f terms harmonic series= %.2f\n",num,sum);
+    return 0;
+}
+// while loop
+#include <stdio.h>
+int main()
+{
+    float i=1,num,sum=0.0;
+    printf ("Enter the n terms: ");
+    scanf ("%f",&num);
+    printf ("Harmonic Series: ");
+    while (i<=num)
+    {
+        if (i<num)
+        {
+            printf ("1/%.0f + ",i);
+            sum+=(1/i);
+        }
+        else
+        {
+            printf ("1/%.0f ",i);
+            sum+=(1/i);
+        }
+        i++;
+    }
+    printf ("\nSum of %.0f terms harmonic series= %.2f\n",num,sum);
+    return 0;
+}
+// do-while loop
+#include <stdio.h>
+int main()
+{
+    float i=1,num,sum=0.0;
+    printf ("Enter the n terms: ");
+    scanf ("%f",&num);
+    printf ("Harmonic Series: ");
+    do
+    {
+        if (i<num)
+        {
+            printf ("1/%.0f + ",i);
+            sum+=(1/i);
+        }
+        else
+        {
+            printf ("1/%.0f ",i);
+            sum+=(1/i);
+        }
+        i++;
+    } while (i<=num);
+    printf ("\nSum of %.0f terms harmonic series= %.2f\n",num,sum);
+    return 0;
+}
