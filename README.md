@@ -1,2 +1,2 @@
 # Number-Series
-Loop and Array
+Loop
